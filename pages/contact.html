@@ -3,38 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Contacts</title>
-    <link rel="icon"href="../img/logo.webp">
+    <link rel="icon"href="../img/duck_logo.png">
 </head>
 <body>
-    <div align="center">
-        <a href="../index.html">Main</a>
-        <a href="contact.html">Contacts</a>
-        <a href="gallery.html">Gallery</a>
-    </div>
-    <hr>
-    <h1 align="center">Contacts</h1>
-    <h3 align="center">If you want one of these ducks, please fill
-        out the form below and we will get back to you as soon as possible.
-    </h3>
-    <div>
-        <h4>What to do:</h4>
-        <ul>
-            <li>Enter your name</li>
-            <li>Enter your surname</li>
-            <li>Enter your email</li>
-        </ul>
-    </div>
-    <div align="center">
-        <label>Name:</label> <br>
-        <input type="text" placeholder="Name"><br><br>
-        <label>Surname:</label> <br>
-        <input type="text" placeholder="Surname"><br><br>
-        <label>Email:</label> <br>
-        <input type="email" placeholder="Email"><br><br>
-        <label>Comment:</label><br>
-        <input type="textarea" width="500" height="200" placeholder="Comment"><br><br>
-        <input type="button" value="I want a duck!" onclick="alert('Duck will be sent to your email!')">
+    <div class="container">
+        <div class="menu">
+            <img id="duck-logo" src="../img/duck_logo.png" alt="Duck Logo" height="50">
+            <a href="../index.html">Main</a>
+            <a href="contact.html">Contacts</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+        <hr>
+        <h1 align="center" id="title_main">Contacts</h1>
+        <h3 align="center">If you want one of these ducks, please fill
+            out the form below and we will get back to you as soon as possible.
+        </h3>
+        <div class="contact-instructions">
+            <h4>What to do:</h4>
+            <ul class="contact-instructions-list">
+                <li>Enter your name</li>
+                <li>Enter your surname</li>
+                <li>Enter your email</li>
+            </ul>
+        </div>
+        <div class="contact-form">
+            <label>Name:</label> <br>
+            <input type="text" placeholder="Name"><br><br>
+            <label>Surname:</label> <br>
+            <input type="text" placeholder="Surname"><br><br>
+            <label>Email:</label> <br>
+            <input type="email" placeholder="Email"><br><br>
+            <label>Comment:</label><br>
+            <textarea id="comment-label" rows="4" cols="50" placeholder="Comment"></textarea><br><br>
+        </div>
+            <input class="contact-button" type="button" value="I want a duck!" onclick="alert('Duck will be sent to your email!')">
     </div>
 </body>
 </html>
